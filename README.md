@@ -5,7 +5,7 @@
 
 ### Instalar
 <p>
-   Parar iniciar el rpoyecto se debe instalar las dependencias con el gestor de paquetes NPM:
+   Parar iniciar el proyecto se debe instalar las dependencias con el gestor de paquetes NPM:
    
      ⚫ npm imstall
      
