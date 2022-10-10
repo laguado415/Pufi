@@ -1,0 +1,26 @@
+.product_content{
+  min-height: 100vh;
+  padding-top: 97px;
+  
+  .product{
+    @extend .flexBox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product_image{
+    width: 50%;
+    border: 1px solid #000;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .product_description{
+    width: 70%;
+    text-align: justify;
+  }
+}

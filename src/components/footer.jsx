@@ -2,6 +2,7 @@ import React from "react";
 import "../css/style.css";
 import logo from "../../public/assets/logo.svg";
 import { footer_icon, social_icons } from "../../public/assets";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,13 +14,21 @@ function Footer() {
           </div>
         </div>
         <div className="footer_Item">
-          <span>PUFI RAIN</span>
+          <Link to={"/rain"}>
+            <span>PUFI RAIN</span>
+          </Link>
           <br />
-          <span>PUFI PUFF</span>
+          <Link to={"/puff"}>
+            <span>PUFI PUFF</span>
+          </Link>
           <br />
-          <span>PUFI CART</span>
+          <Link to={"/cart"}>
+            <span>PUFI CART</span>
+          </Link>
           <br />
-          <span>PUFI NAP</span>
+          <Link to={"/nap"}>
+            <span>PUFI NAP</span>
+          </Link>
         </div>
         <div className="footer_Item">
           <span>CONTACTO</span>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../css/style.css";
 import Slider from "./slider";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -13,7 +13,7 @@ import {
   puff_icon3,
   puff_icon4,
 } from "../../../public/assets";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const images = ["puff_One.jpeg", "puff_Two.jpeg", "puff_Three.jpg"];
 
@@ -35,6 +35,14 @@ export default function Home() {
     navigate("/contact");
   };
 
+  useEffect(() => {
+    scrollTop();
+  }, []);
+
+  const scrollTop = () => {
+    document.documentElement.scrollTop = 0;
+  };
+
   return (
     <section>
       <div className="home">
@@ -51,21 +59,25 @@ export default function Home() {
         </div>
         <div className="view_More">
           <div className="icon">
-            <img src={puff_icon1} alt="icon" />
+            <img src={puff_icon2} alt="icon" />
           </div>
           <h2>pufi RAIN</h2>
           <p>Descripción del producto. Este es un texto simulado</p>
-          <button> {">"} MÁS INFO </button>
+          <Link to={"/rain"}>
+            <button> {">"} MÁS INFO </button>
+          </Link>
         </div>
       </div>
       <div className="double">
         <div className="view_More">
           <div className="icon">
-            <img src={puff_icon2} alt="icon" />
+            <img src={puff_icon1} alt="icon" />
           </div>
           <h2>pufi PUFF</h2>
           <p>Descripción del producto. Este es un texto simulado</p>
-          <button> {">"} MÁS INFO </button>
+          <Link to={"/puff"}>
+            <button> {">"} MÁS INFO </button>
+          </Link>
         </div>
         <div>
           <img src={puff_2} alt="puff_1" />
@@ -81,7 +93,9 @@ export default function Home() {
           </div>
           <h2>pufi CART</h2>
           <p>Descripción del producto. Este es un texto simulado</p>
-          <button> {">"} MÁS INFO </button>
+          <Link to={"/cart"}>
+            <button> {">"} MÁS INFO </button>
+          </Link>
         </div>
       </div>
       <div className="double">
@@ -91,7 +105,9 @@ export default function Home() {
           </div>
           <h2>pufi NAP</h2>
           <p>Descripción del producto. Este es un texto simulado</p>
-          <button> {">"} MÁS INFO </button>
+          <Link to={"/nap"}>
+            <button> {">"} MÁS INFO </button>
+          </Link>
         </div>
         <div>
           <img src={puff_4} alt="puff_1" />

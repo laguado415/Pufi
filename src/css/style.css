@@ -23,6 +23,14 @@ nav .nav_Menu {
   align-items: center;
   font-size: 11px;
 }
+nav .nav_Menu a {
+  width: 25%;
+  border-left: 1.8px solid #000;
+  cursor: pointer;
+}
+nav .nav_Menu a:first-child {
+  border-left: none;
+}
 nav .nav_MyCount {
   width: 15%;
   height: 80%;
@@ -45,24 +53,23 @@ nav .nav_MyCount {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  width: 25%;
-  border-left: 1.8px solid #000;
+  width: 100%;
   cursor: pointer;
 }
-.nav_Item:first-child {
-  border-left: none;
+.nav_Item label {
+  color: #000;
 }
 
 .nav_Icon {
   display: block;
-  height: 52%;
+  height: 43px;
 }
 .nav_Icon img {
   height: 100%;
   width: 100%;
 }
 
-.flexBox, .form, .format, .footer_flexBox, .footer_social, .footer, .slider_title, .slide_index, .slider_content, .view_More, .news_Letter div, .simple, .news_Letter, .collage, .double .overlay_text, nav, nav > div, nav .nav_Menu, nav .nav_MyCount {
+.flexBox, .product_content .product, .form, .format, .footer_flexBox, .footer_social, .footer, .slider_title, .slide_index, .slider_content, .view_More, .news_Letter div, .simple, .news_Letter, .collage, .double .overlay_text, nav, nav > div, nav .nav_Menu, nav .nav_MyCount {
   display: flex;
 }
 
@@ -256,6 +263,10 @@ section {
   padding: 32px 13px;
   margin-top: 5px;
 }
+.footer span {
+  font-weight: bold;
+  color: #000;
+}
 .footer .footer_Item {
   width: 25%;
   min-height: 97px;
@@ -273,7 +284,7 @@ section {
 }
 
 .footer_Logo {
-  width: 20%;
+  width: 15%;
 }
 .footer_Logo img {
   width: 100%;
@@ -385,6 +396,28 @@ section {
   outline: none;
   border: 2px solid #000;
   color: #000;
+}
+
+.product_content {
+  min-height: 100vh;
+  padding-top: 97px;
+}
+.product_content .product {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product_content .product_image {
+  width: 50%;
+  border: 1px solid #000;
+}
+.product_content .product_image img {
+  height: 100%;
+  width: 100%;
+}
+.product_content .product_description {
+  width: 70%;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

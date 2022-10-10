@@ -28,6 +28,16 @@ nav{
     justify-content: center;
     align-items: center;
     font-size: 11px;
+
+    a{
+      width: 25%;
+      border-left: 1.8px solid #000 ;
+      cursor: pointer;
+      
+      &:first-child{
+        border-left: none;
+      }
+    }
   }
   
   .nav_MyCount{
@@ -56,18 +66,17 @@ nav{
   align-items: center;
   flex-direction: column;
   height: 100%;
-  width: 25%;
-  border-left: 1.8px solid #000 ;
+  width: 100%;
   cursor: pointer;
   
-  &:first-child{
-    border-left: none;
+  label{
+    color: #000;
   }
 }
 
 .nav_Icon{
  display: block;
- height: 52%;
+ height: 43px;
 
  img{
    height: 100%;

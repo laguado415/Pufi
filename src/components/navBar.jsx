@@ -14,30 +14,38 @@ function NavBar() {
           </div>
         </Link>
         <div className="nav_Menu">
-          <div className="nav_Item">
-            <div className="nav_Icon">
-              <img src={puff} alt="Cart" />
+          <Link to={"/puff"}>
+            <div className="nav_Item">
+              <div className="nav_Icon">
+                <img src={puff} alt="Cart" />
+              </div>
+              <label>PUFI PUFF</label>
             </div>
-            <label>PUFI PUFF</label>
-          </div>
-          <div className="nav_Item">
-            <div className="nav_Icon">
-              <img src={umbrella} alt="Cart" />
+          </Link>
+          <Link to={"/rain"}>
+            <div className="nav_Item">
+              <div className="nav_Icon">
+                <img src={umbrella} alt="Cart" />
+              </div>
+              <label>PUFI RAIN</label>
             </div>
-            <label>PUFI RAIN</label>
-          </div>
-          <div className="nav_Item">
-            <div className="nav_Icon">
-              <img src={cart} alt="Cart" />
+          </Link>
+          <Link to={"/cart"}>
+            <div className="nav_Item">
+              <div className="nav_Icon">
+                <img src={cart} alt="Cart" />
+              </div>
+              <label>PUFI CART</label>
             </div>
-            <label>PUFI CART</label>
-          </div>
-          <div className="nav_Item">
-            <div className="nav_Icon">
-              <img src={nap} alt="Cart" />
+          </Link>
+          <Link to={"/nap"}>
+            <div className="nav_Item">
+              <div id="nap" className="nav_Icon">
+                <img src={nap} alt="Cart" />
+              </div>
+              <label htmlFor="nap">PUFI NAP</label>
             </div>
-            <label htmlFor="nap">PUFI NAP</label>
-          </div>
+          </Link>
         </div>
         <div className="nav_MyCount">
           <label>MI CUENTA</label>
