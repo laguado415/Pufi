@@ -1,0 +1,50 @@
+.slider_content{
+   @extend .flexBox;
+   height: 100vh;
+   justify-content: flex-end;
+   flex-direction: column;
+  }
+
+.slide_index{
+    @extend .flexBox;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 70px;
+    font-size: 11px;
+    position: relative;
+    margin-top: 70px;
+
+    label:hover{
+       font-size: 14px;
+       cursor: pointer;
+    }
+}
+
+.slider_title{
+  @extend .flexBox;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #000;
+  position: relative;
+
+  p{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  
+  button{
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #000;
+    margin-top: 50px;
+    background: none;
+  }
+
+}
+
+.focus{
+  font-size: 14px;
+}

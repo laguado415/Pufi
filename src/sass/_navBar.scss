@@ -1,0 +1,76 @@
+nav{
+   @extend .flexBox;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 92px;
+   background-color: rgba(255, 255, 255, 0.2);
+   color: #000;
+   position: absolute;
+   font-size: medium;
+   font-weight: bold;
+   z-index: 12;
+
+   
+   
+   >div{
+    @extend .flexBox;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center 
+  }
+  
+  .nav_Menu{
+    @extend .flexBox;
+    width: 40%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+  }
+  
+  .nav_MyCount{
+    @extend .flexBox;
+    width: 15%;
+    height: 80%;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 11px;
+  }
+}
+
+.nav_Logo{
+  width: 50%;
+ 
+  img{
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+.nav_Item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 25%;
+  border-left: 1.8px solid #000 ;
+  cursor: pointer;
+  
+  &:first-child{
+    border-left: none;
+  }
+}
+
+.nav_Icon{
+ display: block;
+ height: 52%;
+
+ img{
+   height: 100%;
+   width: 100%;
+ }
+}

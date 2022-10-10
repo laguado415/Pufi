@@ -1,0 +1,167 @@
+section{
+  display: grid;
+  grid-template-columns: auto-fit;
+}
+
+.double{
+  display: flex;
+  max-width: 100%;
+  height: 70vh;
+
+  div{
+    text-align: center;
+    width: 50%;
+  }
+ 
+  img{
+    width: 100%;
+    height: 100%;
+   } 
+
+   .overlay_text{
+    @extend .flexBox;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    button{
+      background: none;
+      outline: none;
+      border: 1px solid #000;
+    }
+
+   }
+
+   .overlay_image{
+    position: absolute;
+    height: 70vh;
+    left: 0;
+   }
+}
+
+.simple{
+   @extend .flexBox;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+   div{
+    width: 50%;
+     img{
+      width: 100%;
+      height: 100%;
+     }
+   }
+}
+
+.collage{
+  @extend .simple;
+  margin-top: 5px;
+
+  span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ccc;
+  }
+
+   div{
+      text-align: center;
+      font-size: 50px;
+      color: #000;
+      font-weight: bold;
+      margin: 11px 0 38px 0;
+  }
+}
+
+.news_Letter{
+  @extend .simple;
+  margin-bottom: 30px;
+  line-height: 35px;
+
+  label{
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  div{
+    @extend .flexBox;
+    width: 35%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    border: 1px solid #000;
+
+      input{
+        width: 80%;
+        height: 90%;
+        border: none;
+        outline: none;
+        padding: 0 5px;
+      }
+  
+      button{
+        width: 20%;
+        height: 100%;
+        outline: none;
+        border: none;
+        background: none;
+      }
+  }
+  
+  .title{
+     font-weight: bold;  
+    color: #ccc;
+  }
+}
+
+
+.home{
+  max-width: 100%;
+  min-height: 100vh;
+  
+   .home_Image{
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #fff1;
+    z-index: 0;
+
+    img{
+     width: 100%;
+     height: 100%;
+    } 
+
+  }
+}
+
+.view_More{
+  @extend .flexBox;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .icon{
+    width: 100px;
+  
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  button{
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    background: none;
+    outline: none;
+    border: none;
+  }
+}
+
+
