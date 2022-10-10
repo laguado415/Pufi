@@ -9,7 +9,7 @@
    
      ⚫ npm imstall
      
-   Para correr es server debes ejecutar el siguiente comando:
+   Para correr el server debes ejecutar el siguiente comando:
    
      ⚫ npm run dev
      
